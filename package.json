@@ -9,7 +9,8 @@
     "dev": "concurrently \"npm run dev --workspace @ivoire/api\" \"npm run dev --workspace @ivoire/web\"",
     "build": "npm run build --workspace @ivoire/api && npm run build --workspace @ivoire/web",
     "typecheck": "npm run typecheck --workspace @ivoire/api && npm run typecheck --workspace @ivoire/web",
-    "start": "concurrently \"npm run start --workspace @ivoire/api\" \"npm run start --workspace @ivoire/web\""
+    "start": "concurrently \"npm run start --workspace @ivoire/api\" \"npm run start --workspace @ivoire/web\"",
+    "install:all": "npm install"
   },
   "devDependencies": {
     "concurrently": "^9.0.1",
