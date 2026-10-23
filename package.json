@@ -1,0 +1,20 @@
+{
+  "name": "ivoire-mobility",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @ivoire/api\" \"npm run dev --workspace @ivoire/web\"",
+    "build": "npm run build --workspace @ivoire/api && npm run build --workspace @ivoire/web",
+    "lint": "npm run lint --workspace @ivoire/web",
+    "typecheck": "npm run typecheck --workspace @ivoire/api && npm run typecheck --workspace @ivoire/web",
+    "start": "concurrently \"npm run start --workspace @ivoire/api\" \"npm run start --workspace @ivoire/web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "typescript": "^5.4.5"
+  }
+}
