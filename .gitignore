@@ -5,6 +5,6 @@ build
 dist
 .env
 .env.*
-.DS_Store
 coverage
 npm-debug.log*
+.DS_Store
